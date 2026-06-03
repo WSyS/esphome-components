@@ -232,7 +232,7 @@ void Driver::processContent(Telegram *t)
         return;
 
 
-    debug("(brummerhoop) rssi=%d",
+    ESP_LOGI("APP", "(brummerhoop) rssi=%d",
           t->about.rssi_dbm);
 
     // AES key derivation:
